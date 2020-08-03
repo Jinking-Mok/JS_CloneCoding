@@ -3,8 +3,8 @@ const clockContainer = document.querySelector('.js-clock'),
 
 function getTime() {
   const date = new Date();
-  const minute = date.getMinutes();
   const hours = date.getHours();
+  const minute = date.getMinutes();
   const seconds = date.getSeconds();
   clockTitle.innerText = `${hours < 10 ? `0${hours}` : hours}:${
     minute < 10 ? `0${minute}` : minute
